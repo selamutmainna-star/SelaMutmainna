@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Sela Mutmainna | Linktree</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Sacramento&display=swap" rel="stylesheet">
+
+<style>
+*{
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    background: linear-gradient(135deg,#111,#555);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* CARD */
+.card{
+    width:100%;
+    max-width:390px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px);
+    border-radius:25px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+}
+
+/* AVATAR */
+.avatar{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    margin:0 auto 15px;
+    background: linear-gradient(135deg,#fff,#ccc);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:60px;
+    box-shadow:0 0 25px rgba(255,255,255,.6);
+}
+
+/* NAME */
+.name{
+    font-family:'Sacramento',cursive;
+    font-size:38px;
+    color:#fff;
+    margin-bottom:10px;
+}
+
+/* DESC */
+.desc{
+    font-size:14px;
+    color:#ddd;
+    margin-bottom:25px;
+    line-height:1.6;
+}
+
+/* LINK BUTTON */
+.link{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    width:100%;
+    padding:15px;
+    margin:14px 0;
+    border-radius:35px;
+    text-decoration:none;
+    font-weight:600;
+    color:#fff;
+    transition:.3s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+.link::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,.2);
+    opacity:0;
+    transition:.3s;
+}
+
+.link:hover::before{
+    opacity:1;
+}
+
+.link:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+/* PLATFORM COLORS */
+.ig{ background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); }
+.wa{ background:linear-gradient(135deg,#25D366,#128C7E); }
+.mail{ background:linear-gradient(135deg,#4285F4,#34A853); }
+.tg{ background:linear-gradient(135deg,#0088cc,#00bfff); }
+
+/* FOOTER */
+footer{
+    margin-top:30px;
+    font-size:12px;
+    color:#ccc;
+    opacity:.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="avatar">👤</div>
+
+    <div class="name">Sela Mutmainna</div>
+
+    <div class="desc">
+        Hallo 👋<br>
+        Ini akun media sosial resmi saya<br>
+        Yuk terhubung lewat platform di bawah ✨
+    </div>
+
+    <a href="https://instagram.com/shellaamnh" class="link ig" target="_blank">Instagram</a>
+    <a href="https://wa.me/62850869818" class="link wa" target="_blank">WhatsApp</a>
+    <a href="mailto:selamutmainna@gmail.com" class="link mail">Email</a>
+    <a href="https://t.me/shellcomell" class="link tg" target="_blank">Telegram</a>
+
+    <footer>© 2026 • Sela Mutmainna</footer>
+
+</div>
+
+</body>
+</html>
